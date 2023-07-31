@@ -1,4 +1,4 @@
-import * as events from "events";
+import { EventEmitter } from "events";
 
 type DataObj = { [key: string]: any };
 
@@ -6,7 +6,7 @@ type BindStore = {
   [key: string]: BindObj;
 };
 
-class BindObj extends events.EventEmitter {
+class BindObj extends EventEmitter {
   data: DataObj;
   key: string;
   relyOn: Set<string>;
