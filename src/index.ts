@@ -1,1 +1,2 @@
-console.log("Hi")
+import TwoWayBinding from "./two-way-binding"
+export default TwoWayBinding
